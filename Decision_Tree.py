@@ -53,7 +53,7 @@ plt.xlim(x2.min(),x2.max())
 for i,j in enumerate(np.unique(y_set)):
     plt.scatter(x_set[y_set==j,0],x_set[y_set==j,1],
                 c=ListedColormap(('red','green'))(i),label=j)
-plt.title("Naive_bayes (Training set)")    
+plt.title("Decision_Tree(Training set)")    
 plt.xlabel("age")
 plt.ylabel("salary")
 plt.legend()
@@ -75,7 +75,7 @@ plt.xlim(x2.min(),x2.max())
 for i,j in enumerate(np.unique(y_set)):
     plt.scatter(x_set[y_set==j,0],x_set[y_set==j,1],
                 c=ListedColormap(('red','green'))(i),label=j)
-plt.title("Decision(Test set)")    
+plt.title("Decision_Tree(Test set)")    
 plt.xlabel("age")
 plt.ylabel("salary")
 plt.legend()
